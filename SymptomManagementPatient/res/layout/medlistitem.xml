@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/medlistitem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_horizontal_margin"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:orientation="horizontal" >
+    <TextView
+        android:id="@+id/medtakenprompt"
+        style="@style/MedListItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/medtakencheckbox"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/medlayoutmargin"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Did you take your"
+        android:textColor="@color/viewbackgroundcolor">
+    </TextView>
+    <TextView
+        android:id="@+id/medname"
+        style="@style/MedListItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medtakencheckbox"
+        android:layout_toRightOf="@+id/medtakenprompt"
+        android:layout_margin="@dimen/medlayoutmargin"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Med"
+        android:textColor="@color/viewbackgroundcolor" >
+
+    </TextView>
+    
+	 <CheckBox
+        android:id="@+id/medtakencheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/medlayoutmargin"
+        android:text="Yes"
+        android:textColor="@color/viewbackgroundcolor" >
+
+    </CheckBox>
+    
+    <TextView
+        android:id="@+id/meddosage"
+        style="@style/MedListItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medtakenprompt"
+        
+        
+        android:layout_margin="@dimen/medlayoutmargin"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Dosage"
+        android:textColor="@color/viewbackgroundcolor" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/medtime"
+        style="@style/MedListItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/medlayoutmargin"
+        android:layout_toRightOf="@+id/meddosage"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Time"
+        android:textColor="@color/viewbackgroundcolor" >
+
+    </TextView>
+
+   
+
+</RelativeLayout>

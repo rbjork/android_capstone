@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SMwidgetpanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/throatimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/camerabutton"
+        android:src="@drawable/sunflower" />
+
+    <Button
+        android:id="@+id/camerabutton"
+        style="@style/SMbutton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="49dp"
+        android:text="Take Photo" />
+
+<!--     <Button -->
+<!--         android:id="@+id/voicebutton" -->
+<!--         style="@style/SMbutton" -->
+<!--         android:layout_width="fill_parent" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignLeft="@+id/camerabutton" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_centerVertical="true" -->
+<!--         android:text="Record Voice" /> -->
+
+</RelativeLayout>

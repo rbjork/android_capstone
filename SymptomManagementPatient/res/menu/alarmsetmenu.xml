@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/viewcheckinfromalarm" android:title="Checkin" android:titleCondensed="checkin"></item>
+    <item android:id="@+id/viewlogfromalarm" android:title="View Log"></item>
+    <item android:id="@+id/viewpasscodefromalarm" android:title="Set Passcode" android:titleCondensed="passcode"></item>
+    
+
+</menu>

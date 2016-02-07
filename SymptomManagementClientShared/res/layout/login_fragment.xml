@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SMwidgetpanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewbackgroundcolor"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="30dp" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/doctorpatient" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#666666"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+       <EditText
+	        android:id="@+id/unTextView"
+	        style="@style/formField"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="2dp"
+	        android:ems="10"
+	        android:paddingBottom="5dp"
+	        android:paddingLeft="10dp"
+	        android:paddingRight="10dp"
+	        android:paddingTop="5dp"
+	        android:text="admin"
+	        android:textAlignment="center" />
+
+	    <EditText
+	        android:id="@+id/pTextView"
+	        style="@style/formField"
+	        android:layout_width="250dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="textPassword"
+	        android:text="pass"
+	        android:textAlignment="center" />
+	    
+	    <Button
+	        android:id="@+id/button1"
+	        style="@style/SMbutton"
+	        android:layout_width="250dp"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="10dp"
+	        android:onClick="login"
+	        android:text="Login" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewbackgroundcolor"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.androidcapstone.symptommanagementdoctor.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/patientlistheader"
+        style="@style/SMwidgetpanel"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/PatientListItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="First" />
+
+        <TextView
+            style="@style/PatientListItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="Last" />
+
+        <TextView
+            style="@style/PatientListItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:text="DOB" />
+
+        <TextView
+            style="@style/PatientListItemText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="10dp"
+            android:paddingStart="20dp"
+            android:text=" MRN" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/patientslistView"
+        style="@style/SMwidgetpanel"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/patientsearch"
+        android:layout_below="@+id/patientlistheader"
+        android:layout_marginTop="0dp"
+        android:listSelector="@drawable/patientlistselector" >
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/patientsearch"
+        style="@style/SMwidgetpanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/searchtextlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/clearsearchbutton"
+            android:layout_alignParentLeft="true"
+            
+            android:text="SEARCH LAST: "
+            android:textColor="@color/viewbackgroundcolor" />
+
+        <EditText
+            android:id="@+id/searchtext"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_alignBaseline="@+id/clearsearchbutton"
+            android:layout_toLeftOf="@+id/clearsearchbutton"
+            android:layout_toRightOf="@+id/searchtextlabel"
+            android:background="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clearsearchbutton"
+            android:layout_width="60dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="All"
+            android:onClick="clearSearchClick"
+            android:textColor="@color/viewbackgroundcolor" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

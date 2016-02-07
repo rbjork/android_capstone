@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    style="@style/SMwidgetpanelInverse"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/medname"
+        style="@style/MedListTakenItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medtakencheckbox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Med" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/meddosage"
+        style="@style/MedListTakenItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medtakencheckbox"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/medname"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Dosage" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/medtime"
+        style="@style/MedListTakenItemText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/medtakencheckbox"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/meddosage"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="Time" >
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/medtakencheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Taken?" >
+    </CheckBox>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|center_horizontal|center"
+    android:background="@color/viewbackgroundcolor"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="40dp"
+    android:paddingBottom="20dp" >
+
+<!--     <ImageView -->
+<!--         android:id="@+id/imageView1" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_gravity="center_horizontal|fill_horizontal" -->
+<!--         android:layout_marginBottom="5dp" -->
+<!--         android:layout_marginLeft="40dp" -->
+<!--         android:src="@drawable/doctorpatient" /> -->
+
+    <EditText
+        android:id="@+id/passcodeTextView"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#202020"
+        android:inputType="textPassword"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        
+        android:text="1234"
+        android:textAlignment="center"
+        android:textColor="#cccccc"
+        android:textSize="20sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#333333"
+        android:columnCount="3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:rowCount="4" >
+
+        <Button
+            android:id="@+id/key1"
+            style="@style/KeypadButton"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:onClick="keypadEnter"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/key2"
+            style="@style/KeypadButton"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:onClick="keypadEnter"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/key3"
+            style="@style/KeypadButton"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:onClick="keypadEnter"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/key4"
+            style="@style/KeypadButton"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="keypadEnter"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/key5"
+            style="@style/KeypadButton"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:onClick="keypadEnter"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/key6"
+            style="@style/KeypadButton"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:onClick="keypadEnter"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/key7"
+            style="@style/KeypadButton"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:onClick="keypadEnter"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/key8"
+            style="@style/KeypadButton"
+            android:layout_column="1"
+            android:layout_row="2"
+            android:onClick="keypadEnter"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/key9"
+            style="@style/KeypadButton"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:onClick="keypadEnter"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/loginByPassBtn"
+            style="@style/SMbutton"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_row="3"
+            android:text="ENTER"
+            android:textSize="20sp"
+            android:onClick="loginByPassCodeClick"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/clearPassBtn"
+            style="@style/SMbutton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_column="2"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_row="3"
+            android:text="&lt;x"
+            android:onClick="clearPasscodeClick"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </GridLayout>
+
+<!--     <LinearLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="fill_parent" -->
+<!--         android:layout_gravity="bottom" -->
+<!--         android:gravity="bottom" -->
+<!--         android:orientation="vertical" > -->
+
+<!--     </LinearLayout> -->
+
+</LinearLayout>

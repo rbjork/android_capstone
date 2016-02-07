@@ -1,0 +1,54 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+         
+    -->
+    
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:background">#ffcc00</item>
+    </style>
+    
+     <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="SMwidgetlabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#cc9900</item>
+        <item name="android:textSize">14sp</item>
+        
+    </style>
+    <style name="SMwidgetpanel">
+        <item name="android:background">@color/widgetpanelbackgroundcolor</item>
+        <item name="android:padding">5dp</item>
+    </style>
+	
+   
+   <style name="SMradiopanel" >
+        <item name="android:background">@color/widgetpanelbackgroundcolor</item>
+    </style>
+    <style name="SMbutton">
+        <item name="android:background">@drawable/buttonshapbackground</item>
+        <item name="android:textColor">#ffffcc</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="AlarmListItemText">
+        <item name="android:textSize" >20sp</item>
+        <item name="android:textColor">#993333</item>
+    </style>
+    <style name="MedListItemText">
+        <item name="android:textSize" >14sp</item>
+        <item name="android:textColor">#993333</item>
+    </style>
+    <style name="PatientListItemText">
+        <item name="android:textSize" >18sp</item>
+        <item name="android:textColor">@color/viewbackgroundcolor</item>
+    </style>
+</resources>

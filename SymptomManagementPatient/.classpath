@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="com/fitbit/api/|com/fitbit/api/client/|com/fitbit/api/client/http/|com/fitbit/api/client/service/|com/fitbit/api/common/model/achievement/|com/fitbit/api/common/model/activities/|com/fitbit/api/common/model/body/|com/fitbit/api/common/model/bp/|com/fitbit/api/common/model/devices/|com/fitbit/api/common/model/foods/|com/fitbit/api/common/model/glucose/|com/fitbit/api/common/model/heart/|com/fitbit/api/common/model/sleep/|com/fitbit/api/common/model/timeseries/|com/fitbit/api/common/model/units/|com/fitbit/api/common/model/user/|com/fitbit/api/common/service/|com/fitbit/api/model/|com/fitbit/web/|com/fitbit/web/controller/" including="com/androidcapstone/" kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

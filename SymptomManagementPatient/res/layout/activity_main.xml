@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/viewbackgroundcolor"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/painTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="5dp"
+        android:text="Pain Level" />
+
+    <RadioGroup
+        android:id="@+id/painlevelRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/painTextView"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/widgetshapbackground"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioMild"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="well-controlled" />
+
+        <RadioButton
+            android:id="@+id/radio1Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="medium" />
+
+        <RadioButton
+            android:id="@+id/radioSevere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="severe" />
+
+    </RadioGroup>
+     <CheckBox
+        android:id="@+id/eatcheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/painlevelRadioGroup"
+        android:layout_below="@+id/painlevelRadioGroup"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/widgetshapbackground"
+        android:text="Unable to Eat" />
+
+    <CheckBox
+        android:id="@+id/drinkCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eatcheckBox"
+        android:layout_below="@+id/eatcheckBox"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@drawable/widgetshapbackground"
+        android:text="Unable to Drink" />
+
+    <ListView
+        android:id="@+id/medsTakenlistView"
+        style="@style/SMwidgetpanel"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/drinkCheckBox"
+        android:layout_above="@+id/submitCheckinButton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonshapbackground" >
+
+    </ListView>
+
+    <Button
+        android:id="@+id/submitCheckinButton"
+        style="@style/SMbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/medsTakenlistView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@id/painlevelRadioGroup"
+        android:layout_centerHorizontal="true"
+        android:onClick="submitCheckinClick"
+        android:text="Submit Check In" />
+
+</RelativeLayout>

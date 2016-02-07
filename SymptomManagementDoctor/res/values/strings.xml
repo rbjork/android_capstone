@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Doctor SymptomManagement</string>
+    <string name="action_settings">Doctor Settings</string>
+    <string name="polling_settings">Doctor Poll Checkins</string>
+    <string name="patientlist">Doctors Patient List</string>
+     <string name="patientdetail">Doctors Patient Detail</string>
+     <string name="passcodesetting">Doctors Passcode Setting</string>
+     <string name="refresh">Refresh</string>
+    
+</resources>

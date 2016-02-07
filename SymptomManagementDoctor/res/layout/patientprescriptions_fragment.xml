@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/viewbackgroundcolor"
+   
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp" >
+
+    <ListView
+        android:id="@+id/medslist"
+        style="@style/SMwidgetpanel"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/saveprescribedbtn"
+         >
+    </ListView>
+
+    <Button
+        android:id="@+id/saveprescribedbtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="savePrescriptionsChangeClick"
+        android:text="Save" />
+
+</RelativeLayout>

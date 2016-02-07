@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/alarmset" android:title="Set Alarms" android:showAsAction="ifRoom" 
+        android:enabled="true" android:titleCondensed="alarms" android:visible="true"></item>
+    <item android:id="@+id/passcodeset" android:title="Set Passcode" android:enabled="true" android:titleCondensed="passcode"></item>
+<!--     <item android:id="@+id/viewlog" android:title="View past checkins" android:enabled="true" android:titleCondensed="pastcheckins"></item> -->
+    <item android:id="@+id/refresh" android:title="Refresh Prescriptions" android:enabled="true" android:titleCondensed="refresh"></item>
+</menu>
